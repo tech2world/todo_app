@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Master - To-Do</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form method="POST">
+        <input type="text" name="content" placeholder="Add a new task" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <input type="checkbox" {% if task.is_completed %}checked{% endif %}>
+                {{ task.content }}
+                <a href="{{ url_for('update', id=task.id) }}">Edit</a>
+                <a href="{{ url_for('delete', id=task.id) }}" onclick="return confirm('Are you sure you want to delete this task?')">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination">
+        <a href="{{ url_for('todo', page=tasks.prev_num) }}">Previous</a>
+        <a href="{{ url_for('todo', page=tasks.next_num) }}">Next</a>
+    </div>
+    <form method="GET" action="{{ url_for('todo') }}">
+        <input type="text" name="keyword" placeholder="Search tasks">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
