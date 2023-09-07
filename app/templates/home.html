@@ -3,20 +3,22 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Task Master</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
         <div class="container">
-            <a class="navbar-brand" href="{{url_for('home')}}">Task Master</a>
+            <a class="navbar-brand text-primary h1" href="{{url_for('home')}}">Task Master</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
                     </li>
@@ -29,16 +31,109 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
+                    <a href="{{ url_for('todo') }}" class="btn btn-primary ms-lg-3">Get started</a>
 
     </nav>
-    <div class="container">
-        <h1 class="text-alignment-center">Welcome to Task Master!</h1>
-        <p>This app was built using Flask, a Python web framework, for learning purposes.</p>
+    <!-- NAVBAR -->
+
+    <!-- hero -->
+    <section class="m-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 text-center">
+                    <h1 class="display-6">Welcome to Task Master!</h1>
+                    <p class="lead">A web-based Todo-application built with flask</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/images/Work_7.jpg" class="img-fluid " alt="home">
+                </div>
+            </div>
+        </div>
+    </section>
 
     </div>
+
+    <!-- features section -->
+    <section class="bg-secondary opacity-75 py-5">
+        <div class="container">
+            <div class="row md-8 mx-auto text-center">
+                <h1 class="text-light">Features</h1>
+            </div>
+            <div class="row text-dark mt-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <div class="img-fluid h1 text-primary">
+                                <i class="bi bi-person-x"></i>
+                            </div>
+                            <h5 class="card-title display-6">No Login Required</h5>
+                            <p class="card-text lead">Start using Task Master without the need for registration or
+                                login.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <div class="img-fluid h1 text-primary">
+                                <i class="bi bi-list-task"></i>
+                            </div>
+                            <h5 class="card-title display-6">Task Management</h5>
+                            <p class="card-text lead">Provides a user-friendly interface for creating, editing, and
+                                organizing tasks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <div class="img-fluid h1 text-primary">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h5 class="card-title display-6">Boost Productivity</h5>
+                            <p class="card-text lead">Enhance your productivity by efficiently managing your to-do lists
+                                with Task Master.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="m-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="text-center my-4">About Task Master</h2>
+                <p>
+                    Task Master is a user-friendly web-based Todo-application developed with Flask, designed to
+                    streamline task management and boost productivity.
+                </p>
+                <p>
+                    It offers simplicity and accessibility with no login required, allowing users to start managing
+                    tasks instantly. Whether for personal or team use, Task Master simplifies task management with
+                    features like task creation, updates, and completion tracking.
+                </p>
+                <p>
+                    Task Master is designed by Abdulazeez Ibrahim, a dedicated backend developer in the making. This
+                    project is a Portfolio project for ALX-Software Engineering Program. it reflects my commitment
+                    towards practical solutions that enhance efficiency.
+                </p>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light">
+        <p class="text-center">&copy; 2023 TaskMaster</p>
+    </footer>
+
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-</body>
+    </body>
 
 </html>
