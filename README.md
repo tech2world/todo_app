@@ -1,7 +1,3 @@
-Certainly! Here's a detailed README file for your Flask To-Do app project, including the use case and author information:
-
----
-
 # Flask To-Do App
 
 <!-- ![App Screenshot](screenshot.png) -->
