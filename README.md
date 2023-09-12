@@ -1,7 +1,3 @@
-Certainly! Here's a detailed README file for your Flask To-Do app project, including the use case and author information:
-
----
-
 # Flask To-Do App
 
 <!-- ![App Screenshot](screenshot.png) -->
@@ -13,7 +9,6 @@ Certainly! Here's a detailed README file for your Flask To-Do app project, inclu
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author](#author)
 
 ## Introduction
@@ -80,11 +75,6 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 4. Push to the branch: `git push origin feature/my-feature`
 5. Create a pull request.
 
-<!-- ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. -->
 
 ## Author
-
-- Your Name
 - GitHub: [@tech2world](https://github.com/tech2world)
