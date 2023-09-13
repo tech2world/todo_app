@@ -1,0 +1,19 @@
+/* completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: #0d6efd;
+}
+/* task input */
+.add-todo-input,
+.edit-todo-input {
+    outline: none;
+}
+.add-todo-input:focus,
+.edit-todo-input:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+/* features */
+.features-section {
+background-color: #ffda79;
+}

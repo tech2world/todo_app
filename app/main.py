@@ -1,3 +1,4 @@
+from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -11,6 +12,8 @@ class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
     is_completed = db.Column(db.Boolean, default=False)
+    created_date = db.Column(db.DateTime, default=datetime.utcnow)
+
 
 with app.app_context():
     db.create_all()
@@ -18,7 +21,7 @@ with app.app_context():
     @app.route('/')
     @app.route('/home')
     def home():
-        return render_template('home.html')
+        return render_template('index.html')
     
     @app.route('/about')
     def about():

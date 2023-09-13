@@ -9,8 +9,8 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author](#author)
+<!-- - [License](#license) -->
 
 ## Introduction
 
