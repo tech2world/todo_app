@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Task Master - About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- BOOSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>About the author</title>
 </head>
 <body>
-    <h2>About Me</h2>
-    <p>
-        Hi, I'm Abdulazeez Ibrahim, a passionate software engineer currently pursuing my studies with a strong focus on backend development.
-    </p>
-    <p>
-        My journey in the world of coding began with a simple curiosity - the desire to understand how the digital world works behind the scenes. This curiosity led me to dive deep into programming, and I quickly fell in love with the power of code to create meaningful solutions.
-    </p>
-    <p>
-        During my studies, I've had the privilege of working on a diverse range of projects, each one pushing my boundaries and expanding my skill set. However, this Portfolio Project holds a special place in my heart. It's not just a demonstration of my technical abilities; it's a testament to my growth as a developer.
-    </p>
-    <p>
-        With this project, I've ventured into the realm of backend development, building a robust and efficient system that powers the core functionality of my application. But I don't see it as the end; rather, it's just the beginning of a journey filled with endless possibilities.
-    </p>
-    <p>
-        As I continue to explore the ever-evolving world of software engineering, I look forward to contributing my skills to innovative projects, collaborating with like-minded developers, and, most importantly, learning and growing every day.
-    </p>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
+        <div class="container">
+            <a class="navbar-brand brand-logo" href="{{url_for('home')}}">Task Master</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="{{url_for('home')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('todo') }}">Todo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center my-2 pb-3">About Me</h2>
+            <div class="row justify-content-center lh-base">
+                <p>
+                    Hi, I'm Abdulazeez Ibrahim, a passionate software engineer currently pursuing my studies with a strong
+                    focus on
+                    backend development.
+                </p>
+                <p>
+                    My journey in the world of coding began with a simple curiosity - the desire to understand how the
+                    digital world
+                    works behind the scenes. This curiosity led me to dive deep into programming, and I quickly fell in love
+                    with
+                    the power of code to create meaningful solutions.
+                </p>
+                <p>
+                    During my studies, I've had the privilege of working on a diverse range of projects, each one pushing my
+                    boundaries and expanding my skill set. However, this Portfolio Project holds a special place in my
+                    heart. It's
+                    not just a demonstration of my technical abilities; it's a testament to my growth as a developer.
+                </p>
+                <p>
+                    With this project, I've ventured into the realm of backend development, building a robust and efficient
+                    system
+                    that powers the core functionality of my application. But I don't see it as the end; rather, it's just
+                    the
+                    beginning of a journey filled with endless possibilities.
+                </p>
+                <p>
+                    As I continue to explore the ever-evolving world of software engineering, I look forward to contributing
+                    my
+                    skills to innovative projects, collaborating with like-minded developers, and, most importantly,
+                    learning and
+                    growing every day.
+                </p>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- BOOSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- BOOSTRAP JS -->
+</body>
+
 </html>

@@ -1,19 +1,66 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+html,
+body {
+    min-height: 100vh;
+}
+
+/* logo  */
+.brand-logo {
+    font-family: 'Gloock', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* features */
+.features-section {
+    background-color: #ffda79;
+}
+
+/* about  */
+.about-section {
+    padding: 10px 0;
+}
+
+/* footer  */
+.footer {
+    position: relative;
+    top: 100%;
+}
+
+/* ---------------- Todo------------------------ */
+
 /* completed tasks */
 .completed {
     text-decoration: line-through;
     color: #0d6efd;
 }
+
 /* task input */
 .add-todo-input,
 .edit-todo-input {
     outline: none;
 }
+
 .add-todo-input:focus,
 .edit-todo-input:focus {
     border: none !important;
     box-shadow: none !important;
 }
-/* features */
-.features-section {
-background-color: #ffda79;
+
+/* --------------- contact --------------- */
+
+/* icon  */
+.contact-icon {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    color: #0d6efd;
+}
+
+.contact-icon a {
+    text-decoration: none;
 }

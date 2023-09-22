@@ -2,31 +2,33 @@
 <html>
 
 <head>
+    <!-- meta tags  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external style sheets  -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <!-- BOOSTRAP CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <!-- BOOSTRAP ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- project title  -->
     <title>Task Master</title>
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary my-2 fixed-top">
+    <!-- NAV  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-4 fixed-top">
         <div class="container">
-            <a class="navbar-brand text-primary h1 display-6 fw-bolder" href="{{url_for('home')}}">Task Master</a>
+            <!-- brand logo  -->
+            <a class="navbar-brand brand-logo" href="{{url_for('home')}}">Task Master</a>
+            <!-- nav toggler for small screens  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- navigation links  -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
                     </li>
@@ -34,24 +36,23 @@
                         <a class="nav-link" href="{{ url_for('todo') }}">Todo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
+                    <!-- CTA Button  -->
                     <a href="{{ url_for('todo') }}" class="btn btn-primary ms-lg-3">Get started</a>
 
     </nav>
-    <!-- NAVBAR -->
+    <!-- NAV -->
 
     <!-- HERO -->
     <section class="m-5">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 text-center" data-aos="fade-right" data-aos-offset="300"
+            <div class="row align-items-center justify-content-between mt-sm-4">
+                <div class="col-md-6 pt-4 text-center" data-aos="fade-right" data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <h1 class="display-6">Welcome to Task Master</h1>
                     <p class="lead">A web-based Todo-application built with flask</p>
+                    <a href="{{ url_for('todo') }}" class="btn btn-primary ms-lg-3">Get started for free</a>
                 </div>
                 <div class="col-md-6">
                     <img src="../static/images/todo.jpg" class="img-fluid" data-aos="fade-left" data-aos-offset="500"
@@ -69,6 +70,7 @@
             <div class="row md-8 mx-auto text-center">
                 <h1 class="text-light">Features</h1>
             </div>
+            <!-- feature 1  -->
             <div class="row text-dark my-4">
                 <div class="col-md-4">
                     <div class="card h-100 text-center" data-aos="flip-up">
@@ -82,8 +84,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- feature 2  -->
                 <div class="col-md-4">
-                    <div class="card h-100 text-center">
+                    <div class="card h-100 text-center" data-aos="flip-down">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <div class="img-fluid h1 text-primary">
                                 <i class="bi bi-list-task"></i>
@@ -94,8 +97,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- feature 3  -->
                 <div class="col-md-4">
-                    <div class="card h-100 text-center">
+                    <div class="card h-100 text-center" data-aos="flip-up">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <div class="img-fluid h1 text-primary">
                                 <i class="bi bi-rocket-takeoff"></i>
@@ -119,20 +123,23 @@
                     <h5>About</h5>
                 </div>
             </div>
-
+            <!-- about section 1  -->
             <div class="row w-100 justify-content-center">
                 <div class="col-lg-5">
                     <img src="../static/images/highfive.jpg" class="img-fluid" alt="boost">
                 </div>
-                <div class="col-lg-6 text-center my-auto text-uppercase fs-4 text-wrap fw-medium font-monospace lh-base" data-aos="zoom-in-left" >
+                <div class="col-lg-6 text-center my-auto text-uppercase fs-4 text-wrap fw-medium font-monospace lh-base"
+                    data-aos="zoom-in-left">
                     <p>
                         Task Master is a user-friendly web-based Todo-application designed to
                         streamline task management and boost productivity.
                     </p>
                 </div>
             </div>
+            <!-- about section 2  -->
             <div class="row w-100 justify-content-center">
-                <div class="col-lg-6 text-center my-auto text-uppercase fs-4 text-wrap fw-medium font-monospace lh-base" data-aos="zoom-in-right">
+                <div class="col-lg-6 text-center my-auto text-uppercase fs-4 text-wrap fw-medium font-monospace lh-base"
+                    data-aos="zoom-in-right">
                     <p>
                         It offers simplicity and accessibility with no login required, allowing users to start
                         managing tasks instantly.
@@ -142,11 +149,13 @@
                     <img src="../static/images/login.jpg" class="img-fluid" alt="no login">
                 </div>
             </div>
+            <!-- about section 3  -->
             <div class="row w-100 justify-content-center">
                 <div class="col-lg-5">
                     <img src="../static/images/tasks.jpg" class="img-fluid" alt="boost">
                 </div>
-                <div class="col-lg-6 text-center my-auto text-uppercase fs-4 text-wrap fw-medium font-monospace lh-base" data-aos="zoom-in-left">
+                <div class="col-lg-6 text-center my-auto text-uppercase fs-4 text-wrap fw-medium font-monospace lh-base"
+                    data-aos="zoom-in-left">
                     <p>Task Master simplifies task management with
                         features like task creation, updates, and completion tracking.
                     </p>
@@ -157,12 +166,15 @@
     </section>
     <!-- ABOUT -->
 
-    <!-- footer -->
-    <div class="container-fluid bg-warning-subtle">
-        <footer class="py-4">
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-3 my-3 border-top">
+    <!-- FOOTER -->
+    <div class="container-fluid">
+        <footer class="py-3">
+            <!-- copyright notice  -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-3 border-top">
                 <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                <!-- social media links  -->
                 <ul class="list-unstyled d-flex text-primary justify-content-sm-center px-2 mx-lg-4">
+                    <!-- github  -->
                     <li class="ms-3"><a class="nav-link text-dark" href="https://github.com/tech2world" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 499.36">
                                 <title>GitHub</title>
@@ -172,6 +184,7 @@
                             </svg>
                             <small class="d-lg-none ms-2">GitHub</small>
                         </a></li>
+                    <!-- twitter  -->
                     <li class="ms-3"><a class="nav-link text-dark" href="https://twitter.com/the_great_abdul"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 512 416.32">
@@ -186,22 +199,22 @@
 
             </div>
         </footer>
-        <!-- footer  -->
+    </div>
+    <!-- FOOTER  -->
 
-        <!-- scripts -->
+    <!-- SCRIPTS -->
 
-        <!-- BOOSTRAP JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
-        <!-- BOOSTRAP JS -->
-        <!-- AOS JS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script>
-            AOS.init();
-        </script>
-        <!-- AOS JS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- SCRIPTS -->
 </body>
 
 </html>
