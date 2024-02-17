@@ -1,5 +1,5 @@
 # Flask To-Do App
-
+[Visit Website](http://libra.pythonanywhere.com)
 <!-- ![App Screenshot](screenshot.png) -->
 
 ## Table of Contents
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-The Flask To-Do App is a simple yet powerful task management tool built using the Flask web framework and SQLAlchemy. This application allows users to create, update, complete, and delete tasks, making it an ideal choice for organizing and tracking tasks in a straightforward manner.
+The Flask To-Do App is a simple yet powerful task management tool built using the Flask web framework and SQLAlchemy. This application allows users to create, update, complete, and delete tasks, making it an ideal choice for organizing and tracking tasks straightforwardly.
 
 The app provides an intuitive user interface for managing tasks and displays their creation dates, ensuring that users can prioritize their work efficiently. The project demonstrates the use of Flask's routing, templates, forms, and database integration to create a seamless task management experience.
 
